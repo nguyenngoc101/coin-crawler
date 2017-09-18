@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-2.0.4.xsd">
+    <jdbc>
+        <driver>com.mysql.jdbc.Driver</driver>
+        <url>jdbc:mysql://localhost/coin</url>
+        <user>root</user>
+        <password>123456</password>
+    </jdbc>
+
+    <generator>
+        <name>org.jooq.util.DefaultGenerator</name>
+
+        <database>
+            <name>org.jooq.util.mysql.MySQLDatabase</name>
+            <inputSchema>coin</inputSchema>
+            <includes>.*</includes>
+            <excludes>.*_copy.*,.*_db2,.*_3rd,.*_100okucho,.*\d{4}.*,.*(_kamo).*,.*(_nakashima).*, .*(_copy),
+                .*(_bk).*,.*_\\d{8},.*_\d{8},.*_\d{8}_delisted,.*_\d{12},.*_\d{10},.*(_temp).*,.*(_test).*,.*(_bak).*,.*(_old).*
+            </excludes>
+        </database>
+
+        <generate>
+            <relations>true</relations>
+        </generate>
+
+        <target>
+            <packageName>generation</packageName>
+            <directory>src/main/java</directory>
+        </target>
+    </generator>
+</configuration>
