@@ -26,6 +26,7 @@ CREATE TABLE `price` (
   `upd_pgm_id` varchar(32) COLLATE utf8_bin DEFAULT NULL,
   `upd_timestamp` timestamp NULL DEFAULT NULL,
   `volumn` double(20, 2),
+  `market_cap` double(20, 2),
   `percent_1_hour` double(4, 2),
   `percent_24_hour2` double(4, 2),
   `percent_7_days` double(4, 2),

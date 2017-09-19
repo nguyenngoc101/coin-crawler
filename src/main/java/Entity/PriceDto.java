@@ -13,4 +13,13 @@ public class PriceDto {
 
     private Coin coin;
     private Price price;
+
+    public PriceDto() {
+
+    }
+
+    public PriceDto(Coin coin, Price price) {
+        this.coin = coin;
+        this.price = price;
+    }
 }

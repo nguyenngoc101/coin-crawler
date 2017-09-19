@@ -14,6 +14,8 @@ import java.sql.Timestamp;
 public class Price {
     private Double price;
     private Double volumn;
+    private Double circulatingSupply;
+    private Double marketCap;
     private Double percent1Hour;
     private Double percent24Hours;
     private Double percen7Days;
