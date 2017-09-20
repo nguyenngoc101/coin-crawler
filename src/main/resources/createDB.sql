@@ -2,16 +2,15 @@
 create database coin;
 
 -- Create tables
-
 CREATE TABLE `coin` (
   `coin_id` int(7) NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) COLLATE utf8_bin NOT NULL,
+  `code` varchar(10) NOT NULL,
+  `max_supply` BIGINT DEFAULT NULL,
   `reg_pgm_id` varchar(32) COLLATE utf8_bin NOT NULL,
   `reg_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `upd_pgm_id` varchar(32) COLLATE utf8_bin DEFAULT NULL,
   `upd_timestamp` timestamp NULL DEFAULT NULL,
-  `name` varchar(128) COLLATE utf8_bin NOT NULL,
-  `code` varchar(10) NOT NULL,
-  `max_supply` BIGINT DEFAULT NULL,
   PRIMARY KEY (`coin_id`),
   KEY `coin_idx01` (`name`) USING BTREE,
   KEY `coin_idx02` (`code`) USING BTREE

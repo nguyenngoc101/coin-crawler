@@ -1,6 +1,6 @@
 package parser;
 
-import Entity.RawPrice;
+import entity.RawPrice;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

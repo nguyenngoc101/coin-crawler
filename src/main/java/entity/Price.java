@@ -1,4 +1,4 @@
-package Entity;
+package entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,7 +18,7 @@ public class Price {
     private Double marketCap;
     private Double percent1Hour;
     private Double percent24Hours;
-    private Double percen7Days;
+    private Double percent7Days;
     private Timestamp regTime;
     private Timestamp updTime;
 }

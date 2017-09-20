@@ -24,7 +24,7 @@
         </generate>
 
         <target>
-            <packageName>generation</packageName>
+            <packageName>jooqGen</packageName>
             <directory>src/main/java</directory>
         </target>
     </generator>
