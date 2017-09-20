@@ -51,7 +51,12 @@ public class Parser {
         return coinElements.stream().map(e -> parseCoinNode(e)).collect(Collectors.toList());
     }
 
+    public static List<RawPrice> parse(Document document) throws IOException {
+        Elements coinElements = getCoinNodes(document);
+        return coinElements.stream().map(e -> parseCoinNode(e)).collect(Collectors.toList());
+    }
+
     public static String getTextValueCoinNode(Element coinNodeElement, String selector) {
-        return coinNodeElement.select(selector).get(0).childNode(0).toString();
+        return coinNodeElement.select(selector).get(0).childNode(0).toString().trim();
     }
 }
