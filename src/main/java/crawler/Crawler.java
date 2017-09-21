@@ -1,13 +1,8 @@
 package crawler;
 
-import entity.Price;
 import entity.PriceDto;
 import entity.RawPrice;
-import lombok.Getter;
-import lombok.Setter;
 import parser.Parser;
-import repository.CoinRepository;
-import repository.PriceRepository;
 import util.Constants;
 import util.Converter;
 
