@@ -11,7 +11,7 @@ package jooqGen.tables;
 @java.lang.SuppressWarnings("all")
 public class Coin extends org.jooq.impl.UpdatableTableImpl<jooqGen.tables.records.CoinRecord> {
 
-	private static final long serialVersionUID = 1046166220;
+	private static final long serialVersionUID = 719422324;
 
 	/**
 	 * The singleton instance of coin.coin
@@ -34,6 +34,21 @@ public class Coin extends org.jooq.impl.UpdatableTableImpl<jooqGen.tables.record
 	public final org.jooq.TableField<jooqGen.tables.records.CoinRecord, java.lang.Integer> COIN_ID = createField("coin_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
+	 * The table column <code>coin.coin.name</code>
+	 */
+	public final org.jooq.TableField<jooqGen.tables.records.CoinRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR, this);
+
+	/**
+	 * The table column <code>coin.coin.code</code>
+	 */
+	public final org.jooq.TableField<jooqGen.tables.records.CoinRecord, java.lang.String> CODE = createField("code", org.jooq.impl.SQLDataType.VARCHAR, this);
+
+	/**
+	 * The table column <code>coin.coin.max_supply</code>
+	 */
+	public final org.jooq.TableField<jooqGen.tables.records.CoinRecord, java.lang.Long> MAX_SUPPLY = createField("max_supply", org.jooq.impl.SQLDataType.BIGINT, this);
+
+	/**
 	 * The table column <code>coin.coin.reg_pgm_id</code>
 	 */
 	public final org.jooq.TableField<jooqGen.tables.records.CoinRecord, java.lang.String> REG_PGM_ID = createField("reg_pgm_id", org.jooq.impl.SQLDataType.VARCHAR, this);
@@ -52,21 +67,6 @@ public class Coin extends org.jooq.impl.UpdatableTableImpl<jooqGen.tables.record
 	 * The table column <code>coin.coin.upd_timestamp</code>
 	 */
 	public final org.jooq.TableField<jooqGen.tables.records.CoinRecord, java.sql.Timestamp> UPD_TIMESTAMP = createField("upd_timestamp", org.jooq.impl.SQLDataType.TIMESTAMP, this);
-
-	/**
-	 * The table column <code>coin.coin.name</code>
-	 */
-	public final org.jooq.TableField<jooqGen.tables.records.CoinRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR, this);
-
-	/**
-	 * The table column <code>coin.coin.code</code>
-	 */
-	public final org.jooq.TableField<jooqGen.tables.records.CoinRecord, java.lang.String> CODE = createField("code", org.jooq.impl.SQLDataType.VARCHAR, this);
-
-	/**
-	 * The table column <code>coin.coin.max_supply</code>
-	 */
-	public final org.jooq.TableField<jooqGen.tables.records.CoinRecord, java.lang.Long> MAX_SUPPLY = createField("max_supply", org.jooq.impl.SQLDataType.BIGINT, this);
 
 	public Coin() {
 		super("coin", jooqGen.Coin.COIN);

@@ -11,7 +11,7 @@ package jooqGen.tables.records;
 @java.lang.SuppressWarnings("all")
 public class PriceRecord extends org.jooq.impl.UpdatableRecordImpl<jooqGen.tables.records.PriceRecord> {
 
-	private static final long serialVersionUID = 1323200187;
+	private static final long serialVersionUID = 1741720419;
 
 	/**
 	 * The table column <code>coin.price.price_id</code>
@@ -32,17 +32,17 @@ public class PriceRecord extends org.jooq.impl.UpdatableRecordImpl<jooqGen.table
 	}
 
 	/**
-	 * The table column <code>coin.price.coin_id</code>
+	 * The table column <code>coin.price.code_id</code>
 	 */
-	public void setCoinId(java.lang.Integer value) {
-		setValue(jooqGen.tables.Price.PRICE.COIN_ID, value);
+	public void setCodeId(java.lang.String value) {
+		setValue(jooqGen.tables.Price.PRICE.CODE_ID, value);
 	}
 
 	/**
-	 * The table column <code>coin.price.coin_id</code>
+	 * The table column <code>coin.price.code_id</code>
 	 */
-	public java.lang.Integer getCoinId() {
-		return getValue(jooqGen.tables.Price.PRICE.COIN_ID);
+	public java.lang.String getCodeId() {
+		return getValue(jooqGen.tables.Price.PRICE.CODE_ID);
 	}
 
 	/**
@@ -113,6 +113,48 @@ public class PriceRecord extends org.jooq.impl.UpdatableRecordImpl<jooqGen.table
 	 */
 	public java.lang.Double getVolumn() {
 		return getValue(jooqGen.tables.Price.PRICE.VOLUMN);
+	}
+
+	/**
+	 * The table column <code>coin.price.market_cap</code>
+	 */
+	public void setMarketCap(java.lang.Double value) {
+		setValue(jooqGen.tables.Price.PRICE.MARKET_CAP, value);
+	}
+
+	/**
+	 * The table column <code>coin.price.market_cap</code>
+	 */
+	public java.lang.Double getMarketCap() {
+		return getValue(jooqGen.tables.Price.PRICE.MARKET_CAP);
+	}
+
+	/**
+	 * The table column <code>coin.price.price</code>
+	 */
+	public void setPrice(java.lang.Double value) {
+		setValue(jooqGen.tables.Price.PRICE.PRICE_, value);
+	}
+
+	/**
+	 * The table column <code>coin.price.price</code>
+	 */
+	public java.lang.Double getPrice() {
+		return getValue(jooqGen.tables.Price.PRICE.PRICE_);
+	}
+
+	/**
+	 * The table column <code>coin.price.circulating_supply</code>
+	 */
+	public void setCirculatingSupply(java.lang.Double value) {
+		setValue(jooqGen.tables.Price.PRICE.CIRCULATING_SUPPLY, value);
+	}
+
+	/**
+	 * The table column <code>coin.price.circulating_supply</code>
+	 */
+	public java.lang.Double getCirculatingSupply() {
+		return getValue(jooqGen.tables.Price.PRICE.CIRCULATING_SUPPLY);
 	}
 
 	/**

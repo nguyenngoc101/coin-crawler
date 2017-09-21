@@ -12,6 +12,7 @@ import java.sql.Timestamp;
 @Getter
 @Setter
 public class Price {
+    private String codeId;
     private Double price;
     private Double volumn;
     private Double circulatingSupply;

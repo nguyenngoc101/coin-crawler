@@ -11,7 +11,7 @@ package jooqGen.tables;
 @java.lang.SuppressWarnings("all")
 public class Price extends org.jooq.impl.UpdatableTableImpl<jooqGen.tables.records.PriceRecord> {
 
-	private static final long serialVersionUID = 2116744835;
+	private static final long serialVersionUID = 155616079;
 
 	/**
 	 * The singleton instance of coin.price
@@ -34,9 +34,9 @@ public class Price extends org.jooq.impl.UpdatableTableImpl<jooqGen.tables.recor
 	public final org.jooq.TableField<jooqGen.tables.records.PriceRecord, java.lang.Integer> PRICE_ID = createField("price_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The table column <code>coin.price.coin_id</code>
+	 * The table column <code>coin.price.code_id</code>
 	 */
-	public final org.jooq.TableField<jooqGen.tables.records.PriceRecord, java.lang.Integer> COIN_ID = createField("coin_id", org.jooq.impl.SQLDataType.INTEGER, this);
+	public final org.jooq.TableField<jooqGen.tables.records.PriceRecord, java.lang.String> CODE_ID = createField("code_id", org.jooq.impl.SQLDataType.VARCHAR, this);
 
 	/**
 	 * The table column <code>coin.price.reg_pgm_id</code>
@@ -62,6 +62,21 @@ public class Price extends org.jooq.impl.UpdatableTableImpl<jooqGen.tables.recor
 	 * The table column <code>coin.price.volumn</code>
 	 */
 	public final org.jooq.TableField<jooqGen.tables.records.PriceRecord, java.lang.Double> VOLUMN = createField("volumn", org.jooq.impl.SQLDataType.DOUBLE, this);
+
+	/**
+	 * The table column <code>coin.price.market_cap</code>
+	 */
+	public final org.jooq.TableField<jooqGen.tables.records.PriceRecord, java.lang.Double> MARKET_CAP = createField("market_cap", org.jooq.impl.SQLDataType.DOUBLE, this);
+
+	/**
+	 * The table column <code>coin.price.price</code>
+	 */
+	public final org.jooq.TableField<jooqGen.tables.records.PriceRecord, java.lang.Double> PRICE_ = createField("price", org.jooq.impl.SQLDataType.DOUBLE, this);
+
+	/**
+	 * The table column <code>coin.price.circulating_supply</code>
+	 */
+	public final org.jooq.TableField<jooqGen.tables.records.PriceRecord, java.lang.Double> CIRCULATING_SUPPLY = createField("circulating_supply", org.jooq.impl.SQLDataType.DOUBLE, this);
 
 	/**
 	 * The table column <code>coin.price.percent_1_hour</code>

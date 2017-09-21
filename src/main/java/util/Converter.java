@@ -3,7 +3,6 @@ package util;
 import entity.PriceDto;
 import entity.PriceDtoFactory;
 import entity.RawPrice;
-import contants.Constants;
 
 import java.sql.Timestamp;
 
@@ -13,6 +12,7 @@ public class Converter {
         PriceDto priceDto = PriceDtoFactory.getPriceDto();
         priceDto.getCoin().setCode(rawPrice.getCode());
         priceDto.getCoin().setName(rawPrice.getName());
+        priceDto.getPrice().setCodeId(rawPrice.getCode());
         priceDto.getPrice().setMarketCap(convertMarketCap(rawPrice.getMarketCap()));
         priceDto.getPrice().setPrice(convertPrice(rawPrice.getPrice()));
         priceDto.getPrice().setCirculatingSupply(convertCirculatingSupply(rawPrice.getCirculatingSupply()));
@@ -25,17 +25,17 @@ public class Converter {
     }
 
     public static Double convertPercent(String percent) {
-        if (percent == Constants.UNKNOWN) {
+        if (percent.equals(Constants.UNKNOWN)) {
             return Constants.UNKNOWN_PERCENT;
         }
         return Double.valueOf(percent.replaceAll("%", Constants.EMPTY));
     }
 
     public static Double convertVolumn(String volumn24h) {
-        if (volumn24h == Constants.LOW_VOLUM) {
+        if (volumn24h.equals(Constants.LOW_VOLUM)) {
             return Constants.LOW_VOLUMM;
         }
-        if (volumn24h == Constants.UNKNOWN) {
+        if (volumn24h.equals(Constants.UNKNOWN)) {
             return Constants.UNKNOWN_VOLUMN;
         }
         return convertMoney(volumn24h);
@@ -54,7 +54,7 @@ public class Converter {
 
 
     public static Double convertMarketCap(String marketCap) {
-        if (marketCap == Constants.UNKNOWN) {
+        if (marketCap.equals(Constants.UNKNOWN)) {
             return Constants.UNKNOWN_MARKETCAP;
         }
 

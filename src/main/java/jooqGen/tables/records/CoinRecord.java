@@ -11,7 +11,7 @@ package jooqGen.tables.records;
 @java.lang.SuppressWarnings("all")
 public class CoinRecord extends org.jooq.impl.UpdatableRecordImpl<jooqGen.tables.records.CoinRecord> {
 
-	private static final long serialVersionUID = -1855929851;
+	private static final long serialVersionUID = -777033723;
 
 	/**
 	 * The table column <code>coin.coin.coin_id</code>
@@ -29,6 +29,48 @@ public class CoinRecord extends org.jooq.impl.UpdatableRecordImpl<jooqGen.tables
 	 */
 	public java.lang.Integer getCoinId() {
 		return getValue(jooqGen.tables.Coin.COIN.COIN_ID);
+	}
+
+	/**
+	 * The table column <code>coin.coin.name</code>
+	 */
+	public void setName(java.lang.String value) {
+		setValue(jooqGen.tables.Coin.COIN.NAME, value);
+	}
+
+	/**
+	 * The table column <code>coin.coin.name</code>
+	 */
+	public java.lang.String getName() {
+		return getValue(jooqGen.tables.Coin.COIN.NAME);
+	}
+
+	/**
+	 * The table column <code>coin.coin.code</code>
+	 */
+	public void setCode(java.lang.String value) {
+		setValue(jooqGen.tables.Coin.COIN.CODE, value);
+	}
+
+	/**
+	 * The table column <code>coin.coin.code</code>
+	 */
+	public java.lang.String getCode() {
+		return getValue(jooqGen.tables.Coin.COIN.CODE);
+	}
+
+	/**
+	 * The table column <code>coin.coin.max_supply</code>
+	 */
+	public void setMaxSupply(java.lang.Long value) {
+		setValue(jooqGen.tables.Coin.COIN.MAX_SUPPLY, value);
+	}
+
+	/**
+	 * The table column <code>coin.coin.max_supply</code>
+	 */
+	public java.lang.Long getMaxSupply() {
+		return getValue(jooqGen.tables.Coin.COIN.MAX_SUPPLY);
 	}
 
 	/**
@@ -85,48 +127,6 @@ public class CoinRecord extends org.jooq.impl.UpdatableRecordImpl<jooqGen.tables
 	 */
 	public java.sql.Timestamp getUpdTimestamp() {
 		return getValue(jooqGen.tables.Coin.COIN.UPD_TIMESTAMP);
-	}
-
-	/**
-	 * The table column <code>coin.coin.name</code>
-	 */
-	public void setName(java.lang.String value) {
-		setValue(jooqGen.tables.Coin.COIN.NAME, value);
-	}
-
-	/**
-	 * The table column <code>coin.coin.name</code>
-	 */
-	public java.lang.String getName() {
-		return getValue(jooqGen.tables.Coin.COIN.NAME);
-	}
-
-	/**
-	 * The table column <code>coin.coin.code</code>
-	 */
-	public void setCode(java.lang.String value) {
-		setValue(jooqGen.tables.Coin.COIN.CODE, value);
-	}
-
-	/**
-	 * The table column <code>coin.coin.code</code>
-	 */
-	public java.lang.String getCode() {
-		return getValue(jooqGen.tables.Coin.COIN.CODE);
-	}
-
-	/**
-	 * The table column <code>coin.coin.max_supply</code>
-	 */
-	public void setMaxSupply(java.lang.Long value) {
-		setValue(jooqGen.tables.Coin.COIN.MAX_SUPPLY, value);
-	}
-
-	/**
-	 * The table column <code>coin.coin.max_supply</code>
-	 */
-	public java.lang.Long getMaxSupply() {
-		return getValue(jooqGen.tables.Coin.COIN.MAX_SUPPLY);
 	}
 
 	/**

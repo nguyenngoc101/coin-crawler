@@ -1,4 +1,4 @@
-package contants;
+package util;
 
 /**
  * Created by framgia on 20/09/2017.
